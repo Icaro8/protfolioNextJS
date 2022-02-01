@@ -1,0 +1,18 @@
+.container {
+  ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    li {
+      a {
+        text-decoration: none;
+        color: var(--white);
+        display: block;
+        background-color: aqua;
+        padding: 20px;
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+      }
+    }
+  }
+}
