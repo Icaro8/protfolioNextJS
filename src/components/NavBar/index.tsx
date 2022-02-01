@@ -6,17 +6,18 @@ import styles from "./styles.module.scss";
 
 export const NavBar: React.FC<{}> = () => {
   const router = useRouter();
+  const uri = router.pathname;
   return (
     <nav className={styles.container}>
       <ul>
         <li>
           <Link href="/">
-            <a>Home</a>
+            <a className={uri === "/" ? styles.active : ""}>Home</a>
           </Link>
         </li>
         <li>
-          <Link href="/">
-            <a>About</a>
+          <Link href="/about">
+            <a className={uri === "/about" ? styles.active : ""}>About</a>
           </Link>
         </li>
         <li>

@@ -8,10 +8,14 @@
         text-decoration: none;
         color: var(--white);
         display: block;
-        background-color: aqua;
+
         padding: 20px;
         border-bottom-right-radius: 5px;
         border-bottom-left-radius: 5px;
+      }
+      .active {
+        background-color: var(--white);
+        color: var(--black);
       }
     }
   }
